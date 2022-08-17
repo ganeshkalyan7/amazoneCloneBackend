@@ -1,6 +1,6 @@
 const express = require("express");
 const seedRouter = express.Router();
-const Product = require(".../models/productModel");
+const Product = require("../models/ProductModel");
 const User = require("../models/userModel");
 const data = require("../Data");
 

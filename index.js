@@ -26,5 +26,8 @@ app.use((err, req, res, next) => {
 });
 
 mongo.connect();
+app.use("/", (req, res) => {
+  res.send("amazone__clone project");
+});
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));

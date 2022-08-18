@@ -9,10 +9,18 @@ const mongo = require("./Connect");
 const dotenv = require("dotenv");
 const userRouter = require("./routers/userRouter");
 const orderRouter = require("./routers/orderRouter");
+const cors = require("cors");
 
 dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
 
 app.get("/api/keys/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || "sb");

@@ -32,7 +32,7 @@ const data = {
       name: "Football Jersey",
       slug: "jersey",
       category: "jersey",
-      Image: "/images/cr7jersy.png",
+      Image: "/images/newjersy.jpg",
       price: 399,
       rating: "4",
       countInStock: 5,
